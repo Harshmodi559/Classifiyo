@@ -1,0 +1,98 @@
+{% extends "base_cooler.html" %} 
+
+{% load static %} 
+
+{% block baseContent%} 
+{% for i in detail %}
+
+<div style="margin: auto 40px">
+  <div>
+    <img style="width: 600px; height: 100px" src="/media/{{i.name_img}}" />
+  </div>
+  <img style="width: 500px;" src="/media/{{i.main_img}}" />
+</div>
+
+{% endfor %}
+{% endblock %} 
+
+
+{% block textContent %}
+{% for i in detail %} 
+
+<p>{{i.text}}</p>
+
+{% endfor %}
+{% endblock%}
+
+{% block tableContent %}
+{% for i in detail %}
+<tr>
+  <th>T E C H N I C A L &nbsp&nbsp&nbsp  S P E C I F I C A T I O N</th>
+</tr>
+<tr>
+  <td>Motor</td>
+  <td>{{i.Motor}}</td>
+</tr>
+<tr>
+  <td>Pump</td>
+  <td>{{i.Pump}}</td>
+</tr>
+<tr>
+  <td>Cooling Area</td>
+  <td>{{i.Cooling_Area}}</td>
+</tr>
+<tr>
+  <td>Air Delivery</td>
+  <td>{{i.Air_Delivery}}</td>
+
+</tr>
+<tr>
+  <td>Electrical</td>
+  <td>{{i.Electrical}}</td>
+
+</tr>
+<tr>
+  <td>Wattage</td>
+  <td>{{i.Wattage}}</td>
+
+</tr>
+<tr>
+  <td>Max. Current</td>
+  <td>{{i.Max_Current}}</td>
+
+</tr>
+<tr>
+  <td>Exhaust / Kit</td>
+  <td>{{i.Exhaust_or_Kit}}</td>
+  
+</tr>
+<tr>
+  <td>Fan Diameter</td>
+  <td>{{i.Fan_Diameter}}</td>
+
+</tr>
+<tr>
+  <td>Water Capacity</td>
+  <td>{{i.Water_Capacity}}</td>
+
+</tr>
+<tr>
+  <td>Cooling Media</td>
+  <td>{{i.Cooling_Media}}</td>
+
+</tr>
+<tr>
+  <td>Dimensions of Product (mm)</td>
+  <td>{{i.Dimensions_of_Product}}</td>
+
+</tr>
+<tr>
+  <td>Weight of Product</td>
+  <td>{{i.Weight_of_Product}}</td>
+ 
+</tr>
+
+
+{% endfor %}
+{% endblock%}
+

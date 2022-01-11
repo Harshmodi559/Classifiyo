@@ -1,0 +1,43 @@
+{% extends "base_electric.html" %} 
+
+{% load static %} 
+
+{% block baseContent%} 
+
+<div >
+{% for j in detail %}
+  {% for i in j %}
+    <!---->
+    <div style="display: flex">
+        <div>
+            <img
+              class="d-block"
+              src="/media/{{i.img}}"
+              style="height: 200px"
+              alt="Second slide"
+            />
+          </div>
+    <!---->
+ 
+  <div style="margin: 60px 60px">
+    <h1 class="font">{{i.name}}</h1>
+    <h4 class="font" style="color: #29589f; margin-top: 30px; font-weight: 600">
+      name
+    </h4>
+    <ul style="margin-top: 20px">
+      <li><p class="sub-text">{{i.company}}</p></li>
+      <li><p class="sub-text">{{i.modelname}}</p></li>
+      <li><p class="sub-text">{{i.gurantee}}</p></li>
+      <li><p class="sub-text">{{i.p1}}</p></li>
+      <li><p class="sub-text">{{i.p2}}</p></li>
+      <li><p class="sub-text">{{i.p3}}</p></li>
+      <li><p class="sub-text">{{i.p4}}</p></li>
+      <li><p class="sub-text">{{i.p5}}</p></li>
+    </ul>
+  </div>
+</div>
+{% endfor %}
+{% endfor %}
+</div>
+
+{% endblock %}

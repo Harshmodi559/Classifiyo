@@ -1,0 +1,155 @@
+body {
+    /* background-color:aqua; */
+    font-family: Nunito;
+   
+  }
+  
+  a {
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(43, 42, 42);
+    margin-left: 30px;
+    letter-spacing: 1px;
+    /* font-weigh */
+  }
+  a:hover {
+    color: #0086ff;
+    transition: 0.2s;
+  }
+  /* .rgh{margin-right: 100px;} */
+  .btn {
+    color: #fff;
+    background-color: #0086ff;
+    border-radius: 30px;
+    width: 110px;
+    margin-right: 40px;
+    position: absolute;
+    right: 0px;
+  }
+  .btn:hover{
+      background-color: #0f6bbb;
+      color: white;
+  }
+  .link {
+    position: absolute;
+    right: 180px;
+  }
+  
+  .logo {
+    font-size: 40px;
+    margin-left: 50px;
+    position: absolute;
+    top:3px;
+  }
+  .navbar{ 
+      width: 100%;
+      box-shadow: 0 0 20px 0 rgb(0 0 0 / 15%);
+    height:65px;
+  /* align-items: center; */
+  z-index: 5; 
+  top: 0;
+  left: 0;
+   }
+  .owner{  font-size: 34px;}
+  
+  .header {
+   text-align: center;
+    color:#434446;
+    margin-top:120px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    position: relative;
+   
+  }
+
+  .input-search{
+      width: 40%;
+      font-family: Nunito;
+      height: 3.44rem;
+      font-size: 1.13rem;
+      transition: .35s;
+      color: #4e5867;
+      background: #fff;
+      border: 3px solid #a6cdff;
+      border-radius: 1.75rem;
+      padding: 0 90px 0 20px;
+     outline: none;
+  }
+  .input-search:hover{
+      box-shadow: 0 0 12px #a6cdff ;
+  }
+  
+  i{
+      color: #0086ff;
+      margin-left: -66px;
+  }
+  
+  .heading{
+      font-size: 40px;
+      text-align: center;
+      letter-spacing: 1px;
+  }
+  
+  .products{
+      margin-top:100px ;
+      background-color: #abb5bb;
+      padding-top: 50px;
+  }
+  .categories{   display: flex;flex-wrap: wrap;}
+  .card{
+    align-items: center;
+    align-content: center;
+    padding: 10px;
+    width: 250px;
+    height: 280px;
+    margin-bottom:20px;
+  }
+
+  .card-img-top{height:200px;width:250px}
+  .card-title{font-weight: 600;font-size: 20px;}
+
+  .card:hover{
+    cursor: pointer;  
+    box-shadow: 0 0 45px #535557;transition: 0.4s;}
+
+    .card-body{    flex: 1 1 auto;
+        /* padding: 1rem 1rem; */
+        margin-top: 20px;}
+
+
+        
+/* HELP BUTTON */
+.help-text {
+  color: white;
+  padding: 8px;
+  /* align-items: center; */
+  text-align: center;
+  /* margin: auto 0px;*/
+}
+.help_detail_text {
+  margin: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  padding: 5px;
+}
+form {
+  display: grid;
+}
+
+.submit {
+  width: 120px;
+  margin: 10px auto;
+  border-radius: 4px;
+  border: 1px;
+  background-color: rgba(58, 57, 57, 0.8);
+  padding: 5px;
+  color: white;
+}
+.submit:hover {
+  background-color: rgba(36, 35, 35, 0.8);
+  transition: 0.4s;
+  color: white;
+}
+
+/* HELP BUTTON ENDS */

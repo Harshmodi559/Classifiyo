@@ -1,0 +1,541 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Nunito;
+  background-color: #f7f7f7;
+}
+
+/* .rgh{margin-right: 100px;} */
+.signup {
+  color: #fff;
+  background-color: #0086ff;
+  border-radius: 30px;
+  width: 110px;
+  margin-right: 40px;
+  position: absolute;
+  right: 0px;
+}
+.btn:hover {
+  background-color: #0f6bbb;
+  color: white;
+}
+
+.logo {
+  font-size: 40px;
+  margin-left: 50px;
+  position: absolute;
+  top: 3px;
+}
+.navbar {
+  width: 100%;
+  box-shadow: 0 0 20px 0 rgb(0 0 0 / 15%);
+  height: 65px;
+  /* align-items: center; */
+  z-index: 5;
+  top: 0;
+  left: 0;
+}
+
+.header {
+  color: #434446;
+  margin-top: 60px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  position: relative;
+}
+
+.input-search:hover {
+  box-shadow: 0 0 12px #a6cdff;
+}
+
+i {
+  color: #0086ff;
+  margin-left: -66px;
+}
+
+.heading {
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.products {
+  margin-top: 100px;
+  background-color: #f7f7f7;
+  padding-top: 50px;
+}
+.categories {
+  display: flex;
+  margin: 50px auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  align-items: center;
+  /* align-content: center; */
+  padding: 10px;
+  /* width: 263px; */
+  /* height: 300px; */
+  border-radius: 16px;
+  margin: 12px;
+}
+
+.card-body {
+  flex: 1 1 auto;
+  padding: 1rem 0rem;
+}
+
+.card:hover {
+  cursor: pointer;
+  box-shadow: 0 0 25px #a7c9e7;
+  transition: 0.4s;
+}
+
+@media screen and (min-width: 850px) {
+  .name {
+    display: flex;
+    display: flex;
+    width: 59%;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+
+  .card-title {
+    font-weight: 600;
+    font-size: 20px;
+  }
+  .owner {
+    font-size: 50px;
+  }
+
+  .input_type {
+    display: flex;
+    width: 60%;
+    margin: auto;
+  }
+  .input-search {
+    width: 100%;
+    display: block;
+    margin: auto;
+    font-family: Nunito;
+    height: 3.44rem;
+    font-size: 1.13rem;
+    transition: 0.35s;
+    color: #3b3838;
+    /* color: #0724c9bb; */
+    background: #fff;
+    border: 3px solid #a6cdff;
+    border-radius: 1.75rem;
+    padding: 0 90px 0 20px;
+    outline: none;
+  }
+
+  .typed-out {
+    font-size: 50px;
+    margin-left: 24px;
+  }
+
+  .card_img {
+    height: 243px;
+    width: 291px;
+  }
+  .categories {
+    width: 90%;
+  }
+
+  .contact_us {
+    display: flex;
+    background-image: url(https://image1.jdomni.in/jdomni_email/Contact_S1_Left_1910221303.png),
+      url(https://image1.jdomni.in/jdomni_email/mailBox_1910171906.png),
+      url(https://image1.jdomni.in/jdomni_email/contactRight1_1910171907.png),
+      url(https://image1.jdomni.in/jdomni_email/contactRight2_1910171908.png),
+      url(https://image1.jdomni.in/jdomni_email/Contact_Us_S1_Right_1910221304.png);
+    background-position: -4% -20%, 21% -9%, 86% -13%, 91% -12%, 107% 118%;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    background-size: 8.5rem, 7rem, 6.5rem, 5.775rem, 13.375rem;
+    background-origin: content-box;
+    max-width: 1530px;
+    padding: 5.3125rem 6.0625rem 6.25rem;
+  }
+  .col1 {
+    margin: inherit;
+    width: 60%;
+  }
+
+  .text {
+    font-size: 42px;
+    letter-spacing: 1px;
+  }
+  .sub-text {
+    font-size: 17px;
+    margin-left: 30px;
+    /* letter-spacing: 1px; */
+    letter-spacing: 1px;
+  }
+
+  .form-control {
+    margin: 30px;
+    width: 70%;
+    font-size: 20px;
+    border: none;
+    border-bottom: 1px solid black;
+    background: none;
+    color: black;
+  }
+  textarea {
+    width: 70%;
+    height: 150px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 5px 30px;
+    background: none;
+    padding: 20px;
+  }
+  textarea[type="text"]::placeholder {
+    color: rgb(53, 49, 49);
+    opacity: 0.5;
+    font-size: 20px;
+  }
+  textarea:focus {
+    padding: 20px;
+    font-size: 20px;
+    outline: none;
+  }
+
+  .submit {
+    color: #fff;
+    background-color: #3a3b3b;
+    border-radius: 20px;
+    padding: 10px;
+    width: 110px;
+    margin: 30px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+  }
+}
+@media screen and (max-width: 850px) {
+  .name {
+    display: none;
+  }
+
+  .owner {
+    font-size: 27px;
+  }
+  .input_seatch_div {
+    width: 40%;
+    margin: 0px auto;
+  }
+  .input-search {
+    width: 40%;
+    margin: 0px auto;
+    font-family: Nunito;
+    height: 3.44rem;
+    font-size: 1.13rem;
+    transition: 0.35s;
+    color: #4e5867;
+    background: #fff;
+    border: 3px solid #a6cdff;
+    border-radius: 1.75rem;
+    padding: 0 90px 0 20px;
+    outline: none;
+  }
+
+  .card-title {
+    font-size: 20px;
+  }
+  .typed-out {
+    font-size: 20px;
+  }
+  .card_img {
+    height: 173px;
+    width: 191px;
+  }
+  .contact_us {
+    background-image: url(https://image1.jdomni.in/jdomni_email/Contact_S1_Left_1910221303.png),
+      url(https://image1.jdomni.in/jdomni_email/mailBox_1910171906.png),
+      url(https://image1.jdomni.in/domni_email/contactRight1_1910171907.png),
+      url(https://image1.jdomni.in/jdomni_email/contactRight2_1910171908.png),
+      url(https://image1.jdomni.in/jdomni_email/Contact_Us_S1_Right_1910221304.png);
+    background-position: -4% -20%, 21% -9%, 86% -13%, 91% -12%, 107% 118%;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    background-size: 8.5rem, 7rem, 6.5rem, 5.775rem, 13.375rem;
+    background-origin: content-box;
+    /* max-width: 1530px; */
+    /* padding: 5.3125rem 6.0625rem 6.25rem; */
+  }
+  .col1 {
+    width: 100%;
+    margin: inherit;
+    padding: 10px;
+  }
+
+  .text {
+    font-size: 32px;
+    width: 90%;
+    margin: 0px auto;
+    letter-spacing: 1px;
+    letter-spacing: 1px;
+  }
+  .sub-text {
+    font-size: 15px;
+    width: 85%;
+    margin: 10px auto;
+    letter-spacing: 1px;
+  }
+
+  .form-control {
+    margin: 30px;
+    width: 70%;
+    font-size: 17px;
+    border: none;
+    border-bottom: 1px solid black;
+    background: none;
+    color: black;
+  }
+
+  textarea {
+    width: 70%;
+    height: 120px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 5px 30px;
+    background: none;
+    padding: 20px;
+  }
+
+  textarea[type="text"]::placeholder {
+    color: rgb(53, 49, 49);
+    font-size: 17px;
+    opacity: 0.5;
+  }
+  textarea:focus {
+    padding: 20px;
+    font-size: 17px;
+    outline: none;
+  }
+  .submit {
+    color: #fff;
+    background-color: #3a3b3b;
+    border-radius: 20px;
+    padding: 8px;
+    width: 90px;
+    margin: 30px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+    border: none;
+  }
+}
+
+.new_customer {
+  display: flex;
+  max-width: 1530px;
+  padding: 5.3125rem 6.0625rem 6.25rem;
+}
+.support_img {
+  width: 350px;
+  height: 350px;
+}
+
+.col2 {
+  display: flex;
+}
+
+.block-2 {
+  height: 386px;
+  width: 390px;
+  background-color: rgb(3, 3, 3);
+  border-radius: 200px;
+  margin-top: 52px;
+}
+.block {
+  height: 406px;
+  width: 426px;
+  background-color: rgb(28, 86, 173);
+  border-radius: 200px;
+  margin: 0px 150px;
+}
+
+/* input:focus{
+  /* outline:white; */
+
+.submit:hover {
+  background-color: #212122;
+  transition: 0.2s;
+}
+
+input[type="text"]::placeholder {
+  color: black;
+  opacity: 0.5;
+}
+input[type="number"]::placeholder {
+  color: black;
+  opacity: 0.5;
+}
+.form-control:focus {
+  box-shadow: none;
+  background: none;
+  border-bottom: 1px solid black;
+}
+
+/* Typewriter Effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.typed-out {
+  overflow: hidden;
+  border-right: 0.15em solid #4da0e9;
+  border-radius: 4px;
+  white-space: nowrap;
+  /* background: #f7f7f7; */
+
+  /* animation-delay: 12s; */
+  animation: typing 2.5s steps(40) infinite;
+}
+.content {
+  display: inline-block;
+}
+
+/* out products logos */
+
+@media screen and (min-width: 700px) {
+  .credentials_box {
+    right: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    float: right;
+  }
+  .message {
+    font-size: 20px;
+    text-align: center;
+    width: 250px;
+    margin: auto;
+    padding: 10px;
+  }
+  .icons {
+    width: 40px;
+    height: 40px;
+  }
+  .address_text {
+    font-size: 20px;
+  }
+  .our_products {
+    display: flex;
+  }
+
+  .box {
+    height: 400px;
+  }
+  .img-logo {
+    width: 214px;
+    height: 105px;
+    margin: auto;
+    /* margin-top: 20px; */
+  }
+  .address,
+  .Contact {
+    margin: 40px;
+  }
+  .product {
+    margin: 30px;
+  }
+
+  #contact_text {
+    font-weight: bold;
+    font-size: 27px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .credentials_box {
+    right: 20px;
+    border: 0.5px solid rgba(255, 0, 0, 0.671);
+    border-radius: 8px;
+    float: right;
+  }
+  .message {
+    font-size: 15px;
+    text-align: center;
+    width: 200px;
+    margin: auto;
+    padding: 8px;
+  }
+
+  #contact_text {
+    font-weight: bold;
+    font-size: 22px;
+  }
+
+  .heading {
+    font-size: 32px;
+  }
+  .icons {
+    width: 30px;
+    height: 30px;
+  }
+
+  .address_text {
+    font-size: 16px;
+  }
+  .our_products {
+    display: flex;
+  }
+
+  .address,
+  .Contact {
+    margin: 30px 0px;
+  }
+  .img-logo {
+    width: 129px;
+    height: 77px;
+    margin: auto;
+    /* margin-top: 20px; */
+  }
+  .product {
+    margin: 20px;
+  }
+
+  .col2 {
+    padding: 20px;
+    background-color: #d3d3d38c;
+  }
+
+  .section-3 {
+    margin: 30px 0px;
+  }
+}
+
+/* logo ends  */
+
+/* //Navbar responsive// */
+
+.links {
+  position: absolute;
+  right: 180px;
+}
+
+.topbar {
+  text-decoration: none;
+  font-size: 20px;
+  color: rgb(43, 42, 42);
+  margin-left: 30px;
+  letter-spacing: 1px;
+}
+a:hover {
+  color: #0086ff;
+  transition: 0.2s;
+}
+
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: none;
+  box-shadow: none;
+}
