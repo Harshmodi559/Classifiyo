@@ -21,13 +21,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ['SECRET_KEY']
+# SECRET_KEY = os.environ['SECRET_KEY']
+SECRET_KEY = "5viiv&!g42a_sn^#@kz&lfvg*nul-3@e-76b3c1zp-=7tcyl@="
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ["classifiyo.herokuapp.com","localhost","127.0.0.1:8000"]
-
+ALLOWED_HOSTS = ["classifiyo.herokuapp.com","localhost",'127.0.0.1']
 
 # Application definition
 
@@ -127,10 +127,6 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
 # media managing for images
 MEDIA_URL='/media/'
-MEDIA_ROOT=os.path.join(BASE_DIR, 'mediafiles')
-MEDIAFILES_DIRS = [os.path.join(BASE_DIR, 'media')]
 
-
-# MEDIA_ROOT=os.path.join(BASE_DIR, 'media/product_image')
-# MEDIA_URL='/media/product_image/'
-DEFAULT_AUTO_FIELD='django.db.models.AutoField' 
+MEDIA_ROOT=os.path.join(BASE_DIR, 'media/')
+DEFAULT_AUTO_FIELD='django.db.models.AutoField'     
