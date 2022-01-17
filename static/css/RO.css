@@ -1,7 +1,6 @@
 body {
   /* background-color:aqua; */
   font-family: Nunito;
-  
 }
 
 .topbar {
@@ -68,7 +67,6 @@ a:hover {
   position: relative;
 }
 
-
 i {
   color: #0086ff;
   margin-left: -66px;
@@ -84,6 +82,7 @@ i {
   margin-top: 100px;
   background-color: #abb5bb;
   padding-top: 50px;
+  padding-bottom: 1px;
 }
 
 .categories {
@@ -117,7 +116,6 @@ i {
 .card:hover {
   cursor: pointer;
   box-shadow: 0 0 45px #535557;
-  transition: 0.4s;
 }
 
 .card-body {
@@ -149,16 +147,13 @@ i {
 .text {
   font-size: 40px;
   color: rgb(15, 15, 15);
- text-align: center;
- padding: 20px;
+  text-align: center;
+  padding: 20px;
 }
-
-
 
 /* contact us */
 
 .contact_us {
-  
   background-image: url(https://image1.jdomni.in/jdomni_email/Contact_S1_Left_1910221303.png),
     url(https://image1.jdomni.in/jdomni_email/mailBox_1910171906.png),
     url(https://image1.jdomni.in/jdomni_email/contactRight1_1910171907.png),
@@ -172,8 +167,171 @@ i {
   padding: 8px 110px;
 }
 
+.footer {
+  display: flex;
+  background-color: rgb(0 0 0 / 98%);
+  flex-direction: row;
+}
+
+.content1 {
+  /* width: 20%; */
+  font-size: 35px;
+  margin-left: 20px;
+}
+
+.content2 {
+  margin-left: 95px;
+  margin-top: 20px;
+  padding: 23px;
+  /* margin: auto; */
+  /* width: 48%;*/
+}
+
+.text1 {
+  font-size: 23px;
+  color: #1679b5;
+  letter-spacing: 0.7px;
+}
+
+.b1 {
+  display: flex;
+  margin-left: 20px;
+}
+
+.b2 {
+  width: 60%;
+}
+
+.text2 {
+  letter-spacing: 0.7px;
+  font-size: 21px;
+  color: white;
+}
+.text3 {
+  font-size: 18px;
+  color: #7da6bf;
+  width: 70%;
+  margin-left: 38px;
+  letter-spacing: 0.7px;
+}
+.b3 {
+  width: 40%;
+}
+
+.text4 {
+  letter-spacing: 0.7px;
+  font-size: 21px;
+  color: white;
+}
+.text5 {
+  font-size: 19px;
+  margin-left: 20px;
+  color: #b8b8df;
+  letter-spacing: 1px;
+}
+/* .content3{} */
+
+#link {
+  margin: 10px;
+  font-size: 18px;
+}
 
 
+@media screen and (max-width: 850px) {
+  .footer {
+    background-color: rgb(0 0 0 / 98%);
+    display: block;
+  }
+  .content1 {
+    padding: 6px 0px;
+    margin: 6px;
+    font-size: 27px;
+  }
+
+  .content2 {
+    padding: 0px;
+    /* margin-left: 95px; */
+    /* margin-top: 20px; */
+    margin: 0px 36px;
+    width: 100%;
+  }
+  .content3{display: none;}
+  .text1 {
+    font-size: 18px;
+    color: #1679b5;
+    letter-spacing: 0.7px;
+  }
+
+  .b1 {
+    display: block;
+    margin-left: 13px;
+  }
+
+  /* .b2{} */
+
+  .text2,
+  .text4 {
+    letter-spacing: 0.7px;
+    font-size: 18px;
+    color: white;
+  }
+
+  .text3 {
+    font-size: 16px;
+    color: #7da6bf;
+    width: 80%;
+    /* margin-left: 38px; */
+    letter-spacing: 0.7px;
+  }
+
+  .text5 {
+    font-size: 17px;
+    margin-left: 20px;
+    color: #fd7b7b;
+    letter-spacing: 1px;
+  }
+
+  .owner {
+    font-size: 27px;
+  }
+
+  .heading {
+    font-size: 33px;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+
+  .categories {
+    display: block;
+    flex-wrap: wrap;
+    /* margin: 0px 50px; */
+    width: 96%;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .card {
+    align-items: center;
+    /* align-content: center; */
+    padding: 20px;
+    width: 96%;
+    flex-direction: row;
+    /* height: 249px; */
+    border-radius: 10px;
+    margin: 35px auto;
+  }
+
+  .card-title {
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .card-img-top {
+    height: 119px;
+    width: 126px;
+  }
+}
 
 /* HELP BUTTON */
 .help-text {
@@ -190,8 +348,34 @@ i {
   border: none;
   padding: 5px;
 }
+.help-details{
+background: rgba(58, 57, 57, 0.8);
+backdrop-filter: blur(2px);
+bottom: 0px;
+/* filter: blur(4px); */
+/* top: 20px; */
+right: 10px;
+display: block;
+border: none;
+border-top-left-radius: 6px;
+border-top-right-radius: 6px;
+position: fixed;
+padding: 10px;
+}
 form {
   display: grid;
+}
+
+.btn-help {
+  /* float: right; */
+  bottom: 0;
+  right: 10px;
+  background-color: rgba(20, 20, 20, 0.8);
+  width: 100px;
+  border-radius: 4px;
+  height: 40px;
+  position: fixed;
+  cursor: pointer;
 }
 
 .submit {

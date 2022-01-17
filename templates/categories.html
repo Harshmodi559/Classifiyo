@@ -122,41 +122,41 @@
     </div>
 
     
+    <div class="footer">
+      <div class="content1">M<span style="color: #4da0e9">odi.</span></div>
 
-    <div id="footer" style="display: flex; background-color: black">
-      <div class="content1" style="padding: 20px; width: 20%; font-size: 40px; margin-left: 50px;">
-        <div class="typed-out">M<span style="color: #4da0e9">odi.</span></div>
-      </div>
-      <div class="content2" style="width: 60%; display: flex">
-        <div style="margin: 28px 10px;">
-          <p style="color: white; font-size: 22px;letter-spacing:1.5px">CONTACT</p>
-          <p style="color: white; margin-left:10px; font-size: 20px;letter-spacing:1.0px">Address:</p>
-          <p style="font-size: 17px;margin-left:20px; color: white; width: 300px;letter-spacing:1.0px">
-            Kumher Gate Near Picture Palace, Bharatpur, Rajasthan (321001)
-          </p>
-        </div>
-        <div style="margin: 28px 10px;padding:30px">
-          <p style="color: white; margin-left:10px; font-size: 20px;letter-spacing:1.0px">Call Us :</p>
-          <p style="font-size: 20px">
-            <a style="text-decoration: none;font-size: 17px;margin-left:20px; color: #ee3636; width: 300px;letter-spacing:1.0px" href="tel:946-217-1642"
-              >9462171641</a
-            >
-          </p>
-          <a
-            href="https://maps.app.goo.gl/DZy4obXbETJMjJfN8"
-            style="text-decoration: none;font-size: 17px;margin-left:20px; color: #ee3636; width: 300px;letter-spacing:1.0px"
-            target="blank"
-            alt="map_loction"
-            ><img
-              src="/media/images/location2.png"
-              style="width: 30px"
-              alt="location"
-            />&nbsp Locate On Map</a
-          >
-         
+      <div class="content2">
+        <p class="text1">CONTACT US :</p>
+        <div class="b1">
+          <div class="b2">
+            <p class="text2">Address:</p>
+            <p class="text3">
+              Kumher Gate Near Picture Palace, Bharatpur, Rajasthan (321001)
+            </p>
+          </div>
+
+          <div class="b3">
+            <p class="text4">Call Us :</p>
+
+            <a href="tel:946-217-1642" style="text-decoration: none">
+              <p class="text5">9462171641</p>
+            </a>
+          </div>
         </div>
       </div>
-      <div class="content3"></div>
+
+      <div class="content3">
+        <a href="{% url 'categories' 2 %}"
+          ><p id="link">Residential Coolers</p></a
+        >
+        <a href="{% url 'categories' 1 %}"><p id="link">Atta Chakki</p></a>
+        <a href="{% url 'categories' 4 %}"
+          ><p id="link">Electrical Appliances</p></a
+        >
+        <a href="{% url 'categories' 6 %}"><p id="link">Domestic Coolers</p></a>
+        <a href="{% url 'categories' 3 %}"><p id="link">RO Spare Parts</p></a>
+        <a href="{% url 'categories' 5 %}"><p id="link">PVC Pipes</p></a>
+      </div>
     </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
