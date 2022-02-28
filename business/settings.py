@@ -31,7 +31,7 @@ ALLOWED_HOSTS = ["classifiyo.herokuapp.com","localhost",'127.0.0.1']
 
 # Application definition
 
-INSTALLED_APPS = [
+INSTALLED_APPS = [ ## built in application 
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -52,13 +52,13 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'business.urls'
+ROOT_URLCONF = 'business.urls'  ##import path to root url
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR,'templates'],
-        'APP_DIRS': True,
+        'DIRS': [BASE_DIR,'templates'], #look temp. source file
+        'APP_DIRS': True,  # will look for temp. source files basically find files if true 
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
@@ -70,7 +70,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'business.wsgi.application'
+WSGI_APPLICATION = 'business.wsgi.application'  # 
 
 
 # Database
@@ -87,7 +87,7 @@ DATABASES = {
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
 
-AUTH_PASSWORD_VALIDATORS = [
+AUTH_PASSWORD_VALIDATORS = [ # list of validatiors to check user password strength
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
     },
@@ -120,7 +120,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_URL = '/static/' # tells all files are located on this root
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]

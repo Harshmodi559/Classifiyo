@@ -58,15 +58,17 @@
 
 <div class="categories">
     {% for i in all_prods %}
+    <div class="card" >
     <a href="{% url 'electrical_products' i.id%}"  data-aos="fade-right"  data-aos-delay="150" data-aos-duration="500"
     data-aos-easing="ease-in-out" alt="{{i.name}}" style="text-decoration:none;color:black">
-<div class="card" >
+
   <div class="card_img"><img style="width:150px" src="/media/{{i.appliances_img}}"></div>
      <div class="card-body">
       <p class="card-title">{{i.name}}</p>
         </div> 
-        </div>
-    </a>    
+        
+    </a>
+  </div>    
   {% endfor %}
 </div>
 </div>
@@ -147,7 +149,7 @@
       <div class="b3">
         <p class="text4">Call Us :</p>
 
-        <a href="tel:946-217-1642" style="text-decoration: none">
+        <a href="tel:946-217-1641" style="text-decoration: none">
           <p class="text5">9462171641</p>
         </a>
       </div>
