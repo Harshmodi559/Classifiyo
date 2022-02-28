@@ -367,8 +367,8 @@ form {
 .text3 {
   font-size: 18px;
   color: #7da6bf;
-  width: 70%;
-  margin-left: 38px;
+  /* width: 70%; */
+  /* margin-left: 38px; */
   letter-spacing: 0.7px;
 }
 .b3 {
@@ -434,9 +434,9 @@ form {
   }
 
   .text3 {
-    font-size: 16px;
+    font-size: 18px;
     color: #7da6bf;
-    width: 80%;
+    /* width: 70%; */
     /* margin-left: 38px; */
     letter-spacing: 0.7px;
   }
