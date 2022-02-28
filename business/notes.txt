@@ -1,0 +1,59 @@
+django admin startproject command creta an wsgi file with an app. 
+wsgi file used for deploymnt, 
+
+//////
+The basic objective of the web server is to store, 
+process and deliver web pages to the users. 
+This intercommunication is done using (HTTP).
+behave as an interface b/w user and database
+/////
+we can specify our own port number if deafault port no (8000) is 
+busy 
+so how to do it :
+python manage.py runserver 5555 <- port no. 
+////
+1. django-admin startproject name
+2. cd name
+3. python manage.py runserver
+4. python manage.py startapp appname        
+5.  to install the app go to ->setting file-> installed app =[ 'appname']
+/////
+migration : contains init.py file which means its a pacakge. it
+contains all files are created after runnig makemigrations command
+
+init.py : if a folder contains init.py file which behave as a python pacakge
+
+admin.py: used to register sql tables and can perform CRUD operations
+
+apps.py : to configure app 
+
+models.py: to create model classes which will then converted into 
+db table by django  
+
+views.py: write all business logics 
+
+test.py : to create tests
+/////
+django.contrib ->package import AppConfig -> function 
+
+/// 
+views.py
+
+a. function based view :  takes web request and return web response
+this response can be html content , redirect, 404 erroe, xml docu. or img
+
+->each view func. taken HTTPrequest object as a first parameter 
+
+return HttpResponse("hello world") ->HttpResponse object
+HttpResponse is a class so we have to import it :
+from django.http import HttpResponse
+
+
+
+
+
+
+
+
+
+
