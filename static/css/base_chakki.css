@@ -9,6 +9,9 @@ body {
   background-color: #f7f7f7;
 }
 
+.checked {
+  color: orange;
+}
 .topbar {
   text-decoration: none;
   font-size: 20px;

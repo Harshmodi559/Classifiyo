@@ -10,7 +10,7 @@ urlpatterns = [
     path("aatachakki/<int:product_id>",views.chakki_products, name="chakki_products"),
     path("appliances/<int:product_id>",views.electrical_products,name="electrical_products"),
     path("categories/",views.category_page,name="category_page"),
-
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
     #    path("ro_spare/<int:product_id>",views.ro_products,name="ro_products"),
 
 

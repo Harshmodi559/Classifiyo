@@ -154,7 +154,23 @@ def cooler_products(request, product_id):
 def category_page(request):
     return render(request,"categories.html")
 
+
+def rating_Products(request):
+    if(request.method=="POST"):
+        rate=request.POST.get("rating")
+        # print(type(rate))
+        dict={1:"very bad",2:"not good",3:"good",4:"nice",5:"excellent"}
+        # result=dict[rate]
+        # print(res)
+        c=2
+        return c
+
+
+
 def chakki_products(request, product_id):
+    x=rating_Products(request)
+    print("result:",x)
+
     if(product_id == 1):
         d = olive.objects.all()
     elif(product_id == 2):
